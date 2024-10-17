@@ -1,5 +1,4 @@
-## GDMCF is a Graph-based Diffusion Model for Collaborative Filtering
-
+## GDMCF: A Graph-based Diffusion Model for Collaborative Filtering
 
 ## Environment
 
@@ -20,9 +19,3 @@ Note that the results on ML-1M differ from those reported in CODIGEM, owing to d
 
 ```bash
 CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --config config/$2 --out_name $3 --noise_scale $4 --discrete $5 --gcnLayerNum $6
-
- 
-### Inference
-
-```bash
-python inference.py --dataset=$1 --gpu=$2
