@@ -18,4 +18,7 @@ Note that the results on ML-1M differ from those reported in CODIGEM, owing to d
 ### Training
 
 ```bash
-CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --config config/$2 --out_name $3 --noise_scale $4 --discrete $5 --gcnLayerNum $6
+CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --config config/$2 --out_name $3 --noise_scale $4 --discrete $5 --gcnLayerNum $6 ```
+
+
+### Inference
