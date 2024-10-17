@@ -1,26 +1,18 @@
-## GDMCF /GDMCF is a Graph-based Diffusion Model for Collaborative Filtering 
-##Environment
-Anaconda 3
-python 3.8.10
-pytorch 1.12.0
-numpy 1.22.3
-##Usage
--Data
-The experimental data are in './datasets' folder, including Amazon-Book and Yelp. 
-Note that the results on ML-1M differ from those reported in CODIGEM, owing to different data processing procedures. CODIGEM did not sort and split the training/testing sets according to timestamps; however, temporal splitting aligns better with the real-world testing.
+## Environment
 
--Training
-bash
+- Anaconda 3
+- Python 3.8.10
+- PyTorch 1.12.0
+- NumPy 1.22.3
+
+## Data
+
+The experimental data are in the `./datasets` folder, including Amazon-Book and Yelp. Note that the results on ML-1M differ from those reported in CODIGEM, owing to different data processing procedures. CODIGEM did not sort and split the training/testing sets according to timestamps; however, temporal splitting aligns better with real-world testing.
+
+## Usage
+
+### Training
+
+```bash
 cd project-name
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
