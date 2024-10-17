@@ -18,7 +18,7 @@ Note that the results on ML-1M differ from those reported in CODIGEM, owing to d
 ### Training
 
 ```bash
-CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --data_path=./datasets/$2/ --lr=$3  --weight_decay=$4 --dims=$5 --batch_size=$6 --steps=$7 --out_name $8 --noise_scale $9 --discrete $10 --gcnLayerNum $11
+CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --data_path=./Datasets/$2/ --lr=$3  --weight_decay=$4 --dims=$5 --batch_size=$6 --steps=$7 --out_name $8 --noise_scale $9 --discrete $10 --gcnLayerNum $11
 
 ```
 
