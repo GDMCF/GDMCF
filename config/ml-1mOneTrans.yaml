@@ -1,0 +1,5 @@
+dims: [300,600]
+backbone: 'DNNOneHotTransformer'
+OneHotMatrix: 2
+sampling_steps: 0
+steps: 5

@@ -1,0 +1,5 @@
+dims: 300
+backbone: 'DNNCat'
+OneHotMatrix: 2
+sampling_steps: 0
+steps: 3
