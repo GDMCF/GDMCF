@@ -26,4 +26,23 @@ CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --config config/$2 --out_name $3 -
 ### Inference
 
 ```bash
-python inference.py --dataset=$1 --gpu=$2
+CUDA_VISIBLE_DEVICES=$1 python inference.py --dataset=$2 
+
+```
+
+## Examples
+
+1. Train GDMCF on Amazon-book
+
+```bash
+CUDA_VISIBLE_DEVICES=$1 python main.py --cuda --config config/$2 --out_name $3 --noise_scale $4 --discrete $5 --gcnLayerNum $6
+
+```
+
+2. Inference GDMCF on Yelp
+   
+```bash
+CUDA_VISIBLE_DEVICES=0 python inference.py --dataset=yelp
+
+```
+
