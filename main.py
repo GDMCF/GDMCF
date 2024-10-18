@@ -67,6 +67,7 @@ def adjacency_to_one_hot(a, b, X):
         # Y[a+j, i] = 1  
     return Y
 
+
 def one_hot_to_adjacency(a, b, Y):
     """
     将形状为[a+b, a+b]的one-hot编码矩阵Y转换回形状为[a, b]的邻接矩阵X。
@@ -103,8 +104,6 @@ def one_hot_to_adjacency(a, b, Y):
             X[i, target_node_index] = Y[i][j]
 
     return X
-
-
 
 def main(args):
     out_path = os.path.join(args.log_name ,args.dataset, datetime.now().strftime('%Y%m%d'))
