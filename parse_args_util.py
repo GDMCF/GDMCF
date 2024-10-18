@@ -30,7 +30,7 @@ def parse_args():
     parser.add_argument('--dims', type=int, action='append', help='the dims for the projection')
     parser.add_argument('--norm', type=bool, default=False, help='Normalize the input or not')
     parser.add_argument('--emb_size', type=int, default=10, help='timestep embedding size')
-    parser.add_argument('--backbone', type=str, default='DNNOneHotEmbeddingGCN', help='projection network type')
+    parser.add_argument('--backbone', type=str, default='lightGCN', help='projection network type')
     parser.add_argument('--OneHotMatrix', type=int, default=1, help='use descrete noise or not')
 
     # params for diffusion
