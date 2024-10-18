@@ -27,10 +27,10 @@ def parse_args():
 
     # params for the model
     parser.add_argument('--time_type', type=str, default='cat', help='cat or add')
-    parser.add_argument('--dims', type=int, action='append', help='the dims for the DNN')
+    parser.add_argument('--dims', type=int, action='append', help='the dims for the projection')
     parser.add_argument('--norm', type=bool, default=False, help='Normalize the input or not')
     parser.add_argument('--emb_size', type=int, default=10, help='timestep embedding size')
-    parser.add_argument('--backbone', type=str, default='DNN', help='backbone network type')
+    parser.add_argument('--backbone', type=str, default='DNN', help='projection network type')
     parser.add_argument('--OneHotMatrix', type=int, default=1, help='use descrete noise or not')
 
     # params for diffusion
