@@ -18,5 +18,4 @@ reweight: 1
 log_name: log
 round: 1
 gpu: 0
-discrete: 0.98
 random_seed: 0
