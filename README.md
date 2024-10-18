@@ -23,16 +23,10 @@ python -u main.py --cuda --dataset=$1 --data_path=./Datasets/$2/ --lr=$3 --weigh
 ```
 
 
-### Inference
-
-```bash
-CUDA_VISIBLE_DEVICES=$1 python inference.py --dataset=$2 
-
-```
 
 ## Examples
 
-1. Train GDMCF on Yelp
+Train GDMCF on Yelp
 
 ```bash
 python -u main.py --cuda --dataset=yelp_clean --data_path=./Datasets/yelp_clean/ --lr=0.00001 --weight_decay=0.0 --batch_size=400 --dims=[1000] --steps=5 --noise_scale=0.01 --log_name=log --gpu=0 --discrete=0.99 --random_seed=0
@@ -41,10 +35,4 @@ python -u main.py --cuda --dataset=yelp_clean --data_path=./Datasets/yelp_clean/
 
 ```
 
-2. Inference GDMCF on Yelp
-   
-```bash
-CUDA_VISIBLE_DEVICES=0 python inference.py --dataset=yelp_clean
-
-```
 
