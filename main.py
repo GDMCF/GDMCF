@@ -144,7 +144,7 @@ def main(args):
     epps0 = mat.sum() / (mat.shape[0] * mat.shape[1])
     print('mat:', mat.shape, mat.sum(), mat.sum() / (mat.shape[0] * mat.shape[1]))
     del mat
-    n_user = 3000
+    n_user = 3000 # sample less data
     ma = torch.FloatTensor(train_data.A)
     ma = ma[:n_user]
     ta = torch.FloatTensor(test_y_data.A)
