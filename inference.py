@@ -69,26 +69,6 @@ elif args.dataset == 'yelp_clean':
     args.noise_scale = 0.01
     args.noise_min = 0.001
     args.noise_max = 0.01
-elif args.dataset == 'ml-1m_clean':
-    args.steps = 40
-    args.noise_scale = 0.005
-    args.noise_min = 0.005
-    args.noise_max = 0.01
-elif args.dataset == 'amazon-book_noisy':
-    args.steps = 10
-    args.noise_scale = 0.005
-    args.noise_min = 0.0001
-    args.noise_max = 0.0005
-elif args.dataset == 'yelp_noisy':
-    args.steps = 5
-    args.noise_scale = 0.001
-    args.noise_min = 0.0005
-    args.noise_max = 0.01
-elif args.dataset == 'ml-1m_noisy':
-    args.steps = 5
-    args.noise_scale = 0.5
-    args.noise_min = 0.001
-    args.noise_max = 0.01
 else:
     raise ValueError
 
@@ -135,14 +115,6 @@ if args.dataset == "amazon-book_clean":
     model_name = "amazon-book_clean_lr5e-05_wd0.0_bs400_dims[1000]_emb10_x0_steps5_scale0.0001_min0.0005_max0.005_sample0_reweight0_log.pth"  #The filename here contains a minor error. The actual hyperparameter 'reweight=1' is used during training.
 elif args.dataset == "yelp_clean":
     model_name = "yelp_clean_lr1e-05_wd0.0_bs400_dims[1000]_emb10_x0_steps5_scale0.01_min0.001_max0.01_sample0_reweight0_log.pth"  # The filename here contains a minor error. The actual hyperparameter 'reweight=1' is used during training.
-elif args.dataset == "ml-1m_clean":
-    model_name = "ml-1m_clean_lr0.001_wd0.0_bs400_dims[200,600]_emb10_x0_steps40_scale0.005_min0.005_max0.01_sample0_reweight1_log.pth"
-elif args.dataset == "amazon-book_noisy":
-    model_name = "amazon-book_noisy_lr5e-05_wd0.0_bs400_dims[1000]_emb10_x0_steps10_scale0.005_min0.0001_max0.0005_sample0_reweight1_log.pth"
-elif args.dataset == "yelp_noisy":
-    model_name = "yelp_noisy_lr1e-05_wd0.0_bs400_dims[1000]_emb10_x0_steps5_scale0.001_min0.0005_max0.01_sample0_reweight0_log.pth"
-elif args.dataset == "ml-1m_noisy":
-    model_name = "ml-1m_noisy_lr0.001_wd0.0_bs400_dims[200,600]_emb10_x0_steps5_scale0.5_min0.001_max0.01_sample0_reweight0_log.pth"
 
 
 model = torch.load(model_path + model_name).to(device)
