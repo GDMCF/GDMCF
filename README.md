@@ -9,9 +9,7 @@
 
 ## Data
 
-The experimental data are in the `./datasets` folder, including Amazon-Book and Yelp. 
-
-Note that the results on ML-1M differ from those reported in CODIGEM, owing to different data processing procedures. CODIGEM did not sort and split the training/testing sets according to timestamps; however, temporal splitting aligns better with real-world testing.
+The experimental data are in the `./Datasets` folder, including Amazon-Book and Yelp. 
 
 ## Usage
 
@@ -21,7 +19,6 @@ Note that the results on ML-1M differ from those reported in CODIGEM, owing to d
 python -u main.py --cuda --dataset=$1 --data_path=./Datasets/$2/ --lr=$3 --weight_decay=$4 --batch_size=$5 --dims=$6 --steps=$7 --noise_scale=$8 --log_name=$9 --gpu=$10 --random_seed $11
 
 ```
-
 
 
 ## Examples
