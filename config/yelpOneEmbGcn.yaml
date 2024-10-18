@@ -1,6 +1,6 @@
 backbone: 'DNNOneHotEmbeddingGCN'
 OneHotMatrix: 2
-data_path: '../datasets/yelp_clean/'
+data_path: '../Datasets/yelp_clean/'
 dataset: 'yelp_clean'
 sampling_steps: 0
 steps: 5
