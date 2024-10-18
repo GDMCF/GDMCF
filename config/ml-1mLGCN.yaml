@@ -1,5 +1,0 @@
-dims: 300
-backbone: 'lightGCN'
-OneHotMatrix: 0
-sampling_steps: 0
-steps: 3
