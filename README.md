@@ -31,8 +31,6 @@ Train GDMCF on Yelp
 ```bash
 python -u main.py --cuda --dataset=yelp_clean --data_path=./Datasets/yelp_clean/ --lr=0.00001 --weight_decay=0.0 --batch_size=400 --dims=[1000] --steps=5 --noise_scale=0.01 --log_name=log --gpu=0 --discrete=0.99 --random_seed=0
 
-
-
 ```
 
 
