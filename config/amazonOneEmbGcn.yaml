@@ -1,7 +1,7 @@
 
 backbone: 'DNNOneHotEmbeddingGCN'
 OneHotMatrix: 2
-data_path: '../datasets/amazon-book_clean/'
+data_path: '../Datasets/amazon-book_clean/'
 dataset: 'amazon-book_clean'
 lr: 5e-5
 weight_decay: 0
