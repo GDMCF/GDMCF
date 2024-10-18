@@ -18,7 +18,7 @@ Note that the results on ML-1M differ from those reported in CODIGEM, owing to d
 ### Training
 
 ```bash
-python -u main.py --cuda --dataset=$1 --data_path=./Datasets/$2/ --lr=$3 --weight_decay=$4 --batch_size=$5 --dims=$6 --steps=$7 --noise_scale=$8 --log_name=$9 --round=$10 --gpu=$11 --discrete $12 --random_seed $13
+python -u main.py --cuda --dataset=$1 --data_path=./Datasets/$2/ --lr=$3 --weight_decay=$4 --batch_size=$5 --dims=$6 --steps=$7 --noise_scale=$8 --log_name=$9 --gpu=$10 --random_seed $11
 
 ```
 
@@ -29,7 +29,7 @@ python -u main.py --cuda --dataset=$1 --data_path=./Datasets/$2/ --lr=$3 --weigh
 Train GDMCF on Yelp
 
 ```bash
-python -u main.py --cuda --dataset=yelp_clean --data_path=./Datasets/yelp_clean/ --lr=0.00001 --weight_decay=0.0 --batch_size=400 --dims=[1000] --steps=5 --noise_scale=0.01 --log_name=log --gpu=0 --discrete=0.99 --random_seed=0
+python -u main.py --cuda --dataset=yelp_clean --data_path=./Datasets/yelp_clean/ --lr=0.00001 --weight_decay=0.0 --batch_size=400 --dims=[1000] --steps=5 --noise_scale=0.01 --log_name=log --gpu=0 --random_seed=0
 
 ```
 
