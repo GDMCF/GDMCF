@@ -179,7 +179,7 @@ def main(args):
     print('data ready.')
 
 
-    ### Build Gaussian Diffusion ###
+    ### Build Diffusion ###
     if args.mean_type == 'x0':
         mean_type = gd.ModelMeanType.START_X
     elif args.mean_type == 'eps':
